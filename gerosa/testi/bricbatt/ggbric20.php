@@ -1,0 +1,147 @@
+#!/usr/local/bin/php 
+<?
+require("../../../include/var.inc");
+$localpath="/gerosa";
+require("../../../include/counter.inc");
+?><html>
+<head>
+<title>L'armata in movimento</title>
+<link href="/acz.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.Stile1 {color: #FFFFFF}
+.Stile10 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+-->
+</style>
+</head>
+<body>
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" bgcolor="#005A87">
+  <tr>
+    <td width="70%" align="left" valign="top"><a href="/index.php"><img src="/log1.png" width="590" height="97" border="0"></a></td>
+    <td width="10%" align="center" valign="top"><a href="/gerosa/brichetto.php"><img src="/gerosa/gerosa.png" width="69" height="91" border="0"></a></td>
+    <td width="20%" align="left" valign="middle"><p class="Stile1 Stile1 Stile1">una nobile figura di uomo,<br>
+  medico soldato e storiografo</p></td>
+  </tr>
+</table> 
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left" valign="top"><img src="/log2.png" width="100%" height="20"></td>
+  </tr>
+  <tr>
+    <td align="right" valign="top" bgcolor="#005A87"><img src="/gerosa/gerosa1.png" width="376" height="44"></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><img src="/log3.png" width="100%" height="20"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#005A87">&nbsp;</td>
+  </tr>
+</table>
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" bgcolor="#005A87">
+  <tr>
+    <td width="30%" align="center" valign="top">
+      <table width="90%"  border="0" cellpadding="0" cellspacing="0" bgcolor="#B9DCFF">
+        <tr>
+          <td align="center" valign="top"><img src="/gerosa/testi/bricbatt/images/briclib.png" width="208" height="288"></td>
+        </tr>
+      </table>
+      <table width="90%"  border="0" cellpadding="0" cellspacing="5" bgcolor="#B9DCFF">
+      <tr>
+        <td align="left" valign="top"><p>Milano, 1965<br><br>
+            <strong>Indice</strong><br>
+          <br>
+          <a href="/gerosa/testi/bricbatt/ggbric00.php">Introduzione</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric01.php">Il mito di Valentina Visconti</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric02.php">Il testamento di Gian Galeazzo</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric03.php">Gli Orl&eacute;ans in agguato</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric04.php">La passeggiata di Carlo VIII</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric05.php">Il crepuscolo degli Sforza</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric06.php">Il ritorno di Massimiliano</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric07.php">La carovana di Venere</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric08.php">Il malfranzese</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric09.php">Pontefici e cardinali</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric10.php">Il Papa guerriero</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric11.php">Le Messe dello Spirito Santo</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric12.php">Il ballo del Corpus Domini</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric13.php">Il re avventuroso e galante</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric14.php">Donne e arm</a>i<br>
+          <a href="/gerosa/testi/bricbatt/ggbric15.php">La favola del pellicano</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric16.php">La nuova calata</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric17.php">Schermaglie diplomatiche</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric18.php">La grande armata</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric19.php">La passata delle Alpi</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric20.php">L'armata in movimento</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric21.php">Ferragosto a Villafranca</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric22.php">Il gran convito del Colonna</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric23.php">La meravigliosa sfilata</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric24.php">Uno stuolo di principi</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric25.php">I grandi favoriti</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric26.php">Dalle Alpi al Lambro</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric27.php">Una puntata a Sant'Eustorgio</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric28.php">Il bellicoso Cardinale</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric29.php">Gli Svizzeri in Milano</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric30.php">Verso Marignano</a><br>
+          <a href="/gerosa/testi/bricbatt/ggbric31.php">Marignano &quot;la belle et bonne terre&quot;</a><br>
+          <a href="ggbric32.php">Lo schieramento</a><br>
+          La strategia del Trivulzio<br>Il mattino del 13 settembre<br>Pattuglie a San Donato<br>Il discorso del Cardinale<br>I Francesi attendono il nemico<br>L'urto tremendo<br>I figli perduti<br>Il Re in prima linea<br>Il Cardinale in pericolo<br>La strana notte<br>La seconda giornata<br>Nuovo schieramento<br>L'arrivo dei Veneziani<br>La stretta finale<br>Eroismo degli Svizzeri<br>Allagamento dei campi<br>Rientro a Milano<br>L'omaggio del nemico<br>Triste epilogo<br>Dopo la battaglia<br>La strage dei nobili<br>Il trombettiere Cristoforo<br>L'alfiere Boemondo<br>Il cavallo di Baiardo<br>L'investitura della cavalleria<br>Il diario di Santa Brera<br>L'armata a San Donato<br>La sorpresa del Pontefice<br>Epilogo delle calate francesi<br>La ferocia del Lautrec<br>Il favorito di turno<br>La signora Clerici<br>La Cappella Votiva<br>La vigna di S.Eusebio<br>Il monastero in rovina<br>Le ricerche del Cappellano Inganni<br>Il trionfo della morte<br>I graziosi &quot;souvenirs&quot;<br>La Nemesi delle tombe<br>Fine delle favorite<br>Il Tempio della Ragione<br>Il sole sui campi</p></td>
+      </tr>
+    </table><br>
+    <table width="45%"  border="0" cellpadding="0" cellspacing="5" bgcolor="#B9DCFF">
+      <tr>
+        <td align="left" valign="top"><p><a href="/zivido/battaglialibri/battaglialibri.php">la battaglia sui libri </a></p></td>
+      </tr>
+    </table>
+    </td>
+    <td width="70%" align="left" valign="top"><table width="98%"  border="0" cellpadding="0" cellspacing="0" bgcolor="#62B0FF">
+      <tr>
+        <td width="5%" bgcolor="#FFD900">&nbsp;</td>
+        <td width="2%">&nbsp;</td>
+        <td width="92%"><p><strong>La Battaglia di Marignano, uomini e tempi delle calate dei francesi sul ducato di Milano</strong></p>
+          </td>
+      </tr>
+    </table>
+      <table width="98%"  border="0" cellpadding="0" cellspacing="5" bgcolor="#B9DCFF">
+        <tr>
+          <td align="left" valign="top"><p><br><strong>L'armata in movimento</strong><br>
+              <br>
+              L&#146;esito della ricognizione fu senz&#146;altro favorevole, nonostante nessuno dei capi si nascondesse le difficolt&agrave; dell&#146;impresa ed il consiglio di guerra presieduto dal Re a Lione decise finalmente: non sembrando conveniente spingere tutto l&#146;esercito attraverso un cammino cos&igrave; malagevole ed aspro, il signore Aymar de Prie con quattrocento lance a quattromila fanti fu inviato in direzione di marsiglia, dove erano pronte le galere che potevano trasportare quella parte dell&#146;armata per via mare a Genova. E qui, valicando l&#146;Appennino, avrebbero raggiunto con pi&ugrave; sicurezza e con maggior rapidit&agrave; Asti ed Alessandria, dove stabilire delle basi di vettovagliamento.<br>
+              Inoltre, acciocch&egrave; non pervenisse agli Svizzeri notizia del cammino che si sarebbe fatto prendere al grosso dell'&#146;rmata, due battaglioni furono mandati ad occupare i valichi del Moncenisio e del monginevro, al fine di stornare la loro attenzione, e se del caso, sorprenderli alle spalle.<br>
+              Il Trivulzio, con la sua sperimentata sagacia, fece apprestare delle macchine e dei castelli di legno che servissero a vincere alcune difficolt&agrave; di passi difficili per il trasporto delle artiglierie e del carreggio. Il Re, intimamente convinto della riuscita dell&#146;impresa, diede ordine di iniziare la marcia, ed il Connestabile di Borbone fece levare le tende dal campo di Guillestre, seguito dal Trivulzio, dal Lautrec, il Navarro e gli altri. Cos&igrave; si inizi&ograve; la scalata del monte, ed era il mattino del 9 agosto.<br>
+              Le difficolt&agrave; di quell&#146;impresa la resero fra le tante memorabile e vale la pena di seguirla con la descrizione del Guicciardini: <span class="citazione">&quot;era necessario salire sopra i monti altissimi, et asprissimi, n&eacute; quali si saliva con grandissima difficult&agrave;, perch&eacute; non vi erano sentieri fatti, n&eacute; talvolta larghezza capace dell&#146;artiglieria, se non quanto di palmo in palmo facilitavano i guastatori, d&egrave; quali procedeva copi grandissima, attaendendo hora ad allargare la strettezza d&egrave; passi, hora a spianare l&#146;eminentie, che impedivano: dalla sommit&agrave; d&egrave; monti si scendeva per precipitii molto prerutti, et non che altro spaventosissimi a guardagli, nelle valli profondissime del fiume dell&#146;Argentiera, per i quali non potendo sostenerle i cavalli che le tiravano, d&egrave; quali vi era un numero abbondantissimo, n&eacute; le spalle d&egrave; guastatori che l&#146;accompagnavano, era spesso necessario, che appiccate a canapi grossissimi, fussero calate con le mani d&egrave; fanti, i quali in tante difficult&agrave; si mettevano ad ogni fatica: n&eacute; passati i primi monti e le prime valli cessava la fatica, perch&eacute; a qyegli succedevano altri monti ed altre vallate, i quali si passavano con le medesime difficult&agrave;&quot;</span>.<br>
+              Descrive il Giovio parimenti il cammino impervio e malagevole attraverso cui i capitani francesi riuscirono ad avere ragione di quei passi dove mai s&#146;erano visti cavalli e carri; da Embrun l&#146;avanguardia, provvista di vettovaglie per cinque giorni giunse a San Clemente ed a San Crispino; quindi lasciato a man sinistra il Monginevro, l&#146;esercito pass&ograve; a guado la Durance, e dopo aver sostato a Guillestre, superato il monte Alvasio, con gran fatica raggiunse la balza di Saint Pol. <span class="citazione">&quot;Et cos&igrave; con meravigliosa industria degli artefici, et con singolar fatica d&egrave; soldati, menarono tutte le bagaglie dell&#146;esercito nell&#146;Argentiera. Il giorno seguente dalle terre di Larchia et d&#146;Ebergia, tutto l&#146;esercito cal&ograve; nella valle dell&#146;Astura&#133;&quot;</span>.<br>
+            La valle dello Stura fu seguita sulla sinistra del fiume fino a Sambuco; all&#146;alba del 10 agosto il Connestabile con tutto lo stato maggiore dell&#146;avanguardia era a Vinadio e la sera a Demonte dove fu posto il campo. </p></td>
+        </tr>
+      </table>
+      <table width="98%"  border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><p>&nbsp;</p></td>
+        </tr>
+      </table>
+      <table width="98%"  border="0" cellpadding="0" cellspacing="5" bgcolor="#B9DCFF">
+        <tr>
+          <td width="65%" align="left" valign="top"><p><img src="/gerosa/testi/bricbatt/images/maddalena.png" width="410" height="365"></p></td>
+          <td width="35%" align="center" valign="middle" class="Stile10"><strong>Il Colle della Maddalena</strong><br>
+            (Stampa inglese dell'Ottocento)<br>            <br>
+            E' il passo chiamato anticamente<br>dell'Argentera, fra le Alpi Marittime<br>e le Cozie. Mette in comunicazione<br>la valle francese dell'Ubaye<br>con quella della Stura di Demone. <br>          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left" valign="top"><img src="/log2.png" width="100%" height="20"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#005A87">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><img src="/log3.png" width="100%" height="20"></td>
+  </tr>
+</table>
+<p class="piepagina"><a href="mailto:webmaster@aczivido.net">webmaster@aczivido.net</a></p>
+</body>
+</html>
