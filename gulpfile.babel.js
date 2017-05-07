@@ -1,12 +1,16 @@
+import del from 'del'
+
+import express from 'express'
+
 import gulp from 'gulp'
 import sequence from 'gulp-sequence'
-
-import del from 'del'
 import imagemin from 'gulp-imagemin'
 import gulpLoadPlugins from 'gulp-load-plugins'
 
 
 const plugins = gulpLoadPlugins()
+const serverPort = 5000
+const server = express()
 
 
 // ----------------------------------------------------------------------------
@@ -44,6 +48,23 @@ gulp.task('clean', () => {
 // ----------------------------------------------------------------------------
 // Tasks
 // ----------------------------------------------------------------------------
+
+// Serve
+gulp.task('serve', () => {
+  server.use(express.static('./src'))
+  server.listen(serverPort)
+
+  console.log(`Serving on localhost:${serverPort}`)  // eslint-disable-line no-console
+})
+
+
+gulp.task('serve:prod', ['build'], () => {
+  server.use(express.static('./dist'))
+  server.listen(serverPort)
+
+  console.log(`Serving on localhost:${serverPort}`)  // eslint-disable-line no-console
+})
+
 
 // Build
 gulp.task('build', sequence('clean', 'build:static', 'build:images'))
