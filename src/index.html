@@ -1,10 +1,5 @@
-#!/usr/local/bin/php 
-<?
-require("include/var.inc");
-$localpath="/";
-require("include/counter.inc");
-?><html>
-<head> 
+<html>
+<head>
 <TITLE>Associazione Culturale Zivido</TITLE>
 <link href="/acz.css" rel="stylesheet" type="text/css">
 <style type="text/css">
@@ -13,22 +8,12 @@ require("include/counter.inc");
 -->
 </style>
 </head>
-<body> 
+<body>
 <table width="100%"  border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td width="70%" align="left" valign="top" bgcolor="#005A87"><img src="/log1.png" width="590" height="97"></td>
     <td width="30%" align="left" valign="middle" bgcolor="#005A87"><h2>Benvenuti nel nostro portale</h2>
-      <p><span class="Stile17 Stile1"><span class="Stile5">ultimo aggiornamento 13.02.2012<br>
-        n.
-        <?
-$conn=mysql_connect($mysql["ip"],$mysql["userid"],$mysql["pwd"]);
-$db=mysql_select_db("aczivido",$conn);
-$qry_counter=mysql_query("SELECT sum(count) FROM counter",$conn);
-$counter=mysql_fetch_array($qry_counter);
-echo $counter[0];
-mysql_close();
-?>
-      visitatori</span></span></p></td>
+      <p><span class="Stile17 Stile1"><span class="Stile5">ultimo aggiornamento 13.02.2012</p></td>
   </tr>
 </table>
 <table width="100%"  border="0" cellspacing="0" cellpadding="0">
@@ -38,8 +23,8 @@ mysql_close();
 </table>
 <table width="100%"  border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td width="50%" align="left" valign="top" bgcolor="#005A87"><a href="opinione/opindex.php"><img src="opinpp.jpg" width="126" height="58" border="0"></a></td>
-    <td width="50%" align="right" valign="top" bgcolor="#005A87"><a href="/gemellaggio/index.php"><img src="/jumelage.png" width="319" height="59" border="0"></a></td>
+    <td width="50%" align="left" valign="top" bgcolor="#005A87"><a href="opinione/opindex.html"><img src="opinpp.jpg" width="126" height="58" border="0"></a></td>
+    <td width="50%" align="right" valign="top" bgcolor="#005A87"><a href="/gemellaggio/index.html"><img src="/jumelage.png" width="319" height="59" border="0"></a></td>
   </tr>
 </table>
 <table width="100%"  border="0" cellspacing="0" cellpadding="0">
@@ -56,46 +41,46 @@ mysql_close();
   <tr>
     <td width="30%" align="left" valign="top"><table width="100%"  border="0" cellspacing="2" cellpadding="0">
       <tr>
-        <td align="left" valign="top"><a href="/ultimiagg.php"><img src="/ultimi.png" width="278" height="20" border="0"></a></td>
+        <td align="left" valign="top"><a href="/ultimiagg.html"><img src="/ultimi.png" width="278" height="20" border="0"></a></td>
       </tr>
       <tr>
-        <td align="left" valign="top"><a href="/attivita/iniziative.php"><img src="/inizia.png" width="278" height="20" border="0"></a></td>
+        <td align="left" valign="top"><a href="/attivita/iniziative.html"><img src="/inizia.png" width="278" height="20" border="0"></a></td>
       </tr>
       <tr>
-        <td align="left" valign="top"><a href="/movies.php"><img src="/video.png" width="278" height="20" border="0"></a></td>
+        <td align="left" valign="top"><a href="/movies.html"><img src="/video.png" width="278" height="20" border="0"></a></td>
       </tr>
       <tr>
-        <td align="left" valign="top"><a href="/zivido/igiganti/gigcopertina.php"><img src="/ritornano.png" width="278" height="20" border="0"></a></td>
+        <td align="left" valign="top"><a href="/zivido/igiganti/gigcopertina.html"><img src="/ritornano.png" width="278" height="20" border="0"></a></td>
       </tr>
       <tr>
-        <td align="left" valign="top"><a href="/sestoulteriano/fiera.php"><img src="/fiera.png" width="278" height="20" border="0"></a></td>
+        <td align="left" valign="top"><a href="/sestoulteriano/fiera.html"><img src="/fiera.png" width="278" height="20" border="0"></a></td>
       </tr>
       <tr>
-        <td align="left" valign="top"><a href="/borgo/indexborg.php"><img src="/corte.png" width="278" height="20" border="0"></a></td>
+        <td align="left" valign="top"><a href="/borgo/indexborg.html"><img src="/corte.png" width="278" height="20" border="0"></a></td>
       </tr>
       <tr>
-        <td align="left" valign="top"><a href="/salastampa/stampaindex.php"><img src="/stampa.png" width="278" height="20" border="0"></a></td>
+        <td align="left" valign="top"><a href="/salastampa/stampaindex.html"><img src="/stampa.png" width="278" height="20" border="0"></a></td>
       </tr>
       <tr>
-        <td align="left" valign="top"><a href="/imagesat.php"><img src="/sat.png" width="278" height="20" border="0"></a></td>
+        <td align="left" valign="top"><a href="/imagesat.html"><img src="/sat.png" width="278" height="20" border="0"></a></td>
       </tr>
       <tr>
-        <td align="left" valign="top"><a href="/borgogig/copertina.php"><img src="/borgo.png" width="278" height="20" border="0"></a></td>
+        <td align="left" valign="top"><a href="/borgogig/copertina.html"><img src="/borgo.png" width="278" height="20" border="0"></a></td>
       </tr>
       <tr>
-        <td align="left" valign="top"><a href="/fotarchivio.php"><img src="/arcfoto.png" width="278" height="20" border="0"></a></td>
+        <td align="left" valign="top"><a href="/fotarchivio.html"><img src="/arcfoto.png" width="278" height="20" border="0"></a></td>
       </tr>
       <tr>
-        <td align="left" valign="top"><a href="/zivido/archeologia/zivarcheo1.php"><img src="/archeo.png" width="278" height="20" border="0"></a></td>
+        <td align="left" valign="top"><a href="/zivido/archeologia/zivarcheo1.html"><img src="/archeo.png" width="278" height="20" border="0"></a></td>
       </tr>
       <tr>
-        <td align="left" valign="top"><a href="/sgmap.php"><img src="/mappa.png" width="278" height="20" border="0"></a></td>
+        <td align="left" valign="top"><a href="/sgmap.html"><img src="/mappa.png" width="278" height="20" border="0"></a></td>
       </tr>
       <tr>
-        <td align="left" valign="top"><a href="/12nov2003.php"><img src="/nassirya.png" width="278" height="20" border="0"></a></td>
+        <td align="left" valign="top"><a href="/12nov2003.html"><img src="/nassirya.png" width="278" height="20" border="0"></a></td>
       </tr>
       <tr>
-        <td align="left" valign="top"><a href="/link/indexlink.php"><img src="/links.png" width="278" height="20" border="0"></a></td>
+        <td align="left" valign="top"><a href="/link/indexlink.html"><img src="/links.png" width="278" height="20" border="0"></a></td>
       </tr>
       <tr>
         <td align="left" valign="top"><a href="mailto:webmaster@aczivido.net"><img src="/scrivici.png" width="278" height="20" border="0"></a></td>
@@ -114,7 +99,7 @@ mysql_close();
       </table>
       <table width="100%"  border="0" cellspacing="0" cellpadding="0">
       <tr>
-        <td align="center" valign="middle"><a href="/borgogig/addio.php"><img src="/grazzani.jpg" width="388" height="291" border="0"></a></td>
+        <td align="center" valign="middle"><a href="/borgogig/addio.html"><img src="/grazzani.jpg" width="388" height="291" border="0"></a></td>
       </tr>
     </table>
       <table width="100%"  border="0" cellspacing="0" cellpadding="0">
@@ -124,7 +109,7 @@ mysql_close();
       </table>
             <table width="100%"  border="0" cellpadding="0" cellspacing="0">
       <tr>
-        <td align="center" valign="top"><a href="/zivido/igiganti/gigcopertina.php"><img src="/ritornano.jpg" width="391" height="97" border="0"></a></td>
+        <td align="center" valign="top"><a href="/zivido/igiganti/gigcopertina.html"><img src="/ritornano.jpg" width="391" height="97" border="0"></a></td>
       </tr>
     </table>
       <table width="100%"  border="0" cellspacing="0" cellpadding="0">
@@ -150,7 +135,7 @@ mysql_close();
     </table>
     <table width="100%"  border="0" cellpadding="0" cellspacing="5" bgcolor="#FFFFFF">
       <tr>
-        <td align="center" valign="top"><p><a href="attivita/guardie.php">resoconto</a> - <a href="attivita/image/gspziv/album/index.html">foto a Zivido</a> - <a href="attivita/image/gsproc/album/index.html">foto a Rocca Brivio</a> - <a href="movies.php#004">filmato</a></p></td>
+        <td align="center" valign="top"><p><a href="attivita/guardie.html">resoconto</a> - <a href="attivita/image/gspziv/album/index.html">foto a Zivido</a> - <a href="attivita/image/gsproc/album/index.html">foto a Rocca Brivio</a> - <a href="movies.php#004">filmato</a></p></td>
       </tr>
     </table>
         <table width="100%"  border="0" cellspacing="0" cellpadding="0">
@@ -160,7 +145,7 @@ mysql_close();
         </table>
       <table width="100%"  border="0" cellpadding="0" cellspacing="3" bgcolor="#FFFFFF">
       <tr>
-        <td align="center" valign="top"><a href="zivido/bisa/caduti.php"><img src="40.gif" width="377" height="79" border="0"></a></td>
+        <td align="center" valign="top"><a href="zivido/bisa/caduti.html"><img src="40.gif" width="377" height="79" border="0"></a></td>
       </tr>
     </table>
             <table width="100%"  border="0" cellspacing="0" cellpadding="0">
@@ -180,7 +165,7 @@ mysql_close();
           </table>
           <table width="100%"  border="0" cellpadding="0" cellspacing="3" bgcolor="#FFFFFF">
             <tr>
-              <td align="center" valign="middle"><a href="/historia/leondibib1.php"><img src="/leondi_sancarlo.jpg" width="378" height="60" border="0"></a></td>
+              <td align="center" valign="middle"><a href="/historia/leondibib1.html"><img src="/leondi_sancarlo.jpg" width="378" height="60" border="0"></a></td>
             </tr>
           </table>
           <table width="100%"  border="0" cellspacing="0" cellpadding="0">
@@ -193,21 +178,21 @@ mysql_close();
         <td align="left" valign="top" bgcolor="#CACACA"><h1>&nbsp;in primo piano </h1></td>
       </tr>
       <tr>
-        <td align="left" valign="top"><p>              <a href="sangiulianomil/roccabrivio/tesi00.php">&quot;Rocca Brivio: ricerca storica, rilievo, manutenzione&quot;</a><br>
-                <a href="historia/lombardia/cavazzini.php">La Madonna di Riozzo, una scultura da riscoprire</a><br>
-                <a href="attivita/confint1.php">Realt&agrave; locale e situazione internazionale alla vigilia della &quot;Battaglia dei Giganti&quot;</a><br>
-                <a href="attivita/confint3.php">L'artiglieria francese alla battaglia di Marignano</a><br>
-                <a href="attivita/confint2.php">L'investitura di Francesco I&deg; da parte del Cavaliere Bayard</a><br>
-                <a href="historia/lombardia/fantoni1.php">Tradizione e innovazione nel governo delle acque a Milano nel sec. XV</a><br>
-                <a href="historia/lombardia/cremosano.php">&quot;Il Codice araldico di Marco Cremosano&quot;</a> Trascrizione dei nomi delle famiglie nobili milanesi e italiane a cura di Sergio Leondi<br>
-                <a href="sestoulteriano/storia/villa01.php">San Matroniano nella leggenda e nella storia</a><br>
-                <a href="historia/leondibib.php">Bibliografia di storia locale del territorio milanese a cura di Sergio Leondi</a> aggiornata al 31.12.2011<br>
-                Zivido e la &quot;Battaglia dei Giganti&quot; sono stati oggetto di un &quot;reportage&quot; del settimanale svizzero Coop Coperazione (tiratura 112.642), con sede a Basilea. (<a href="salastampa/stampaindex.php">leggi</a>) (versione originale in <a href="http://www.cooperazione.ch/pdfdata/co/200425i/0425CO60_030.pdf">PDF</a>)<br>
-                <a href="zivido/castello/affreschi.php">Gli affreschi del castello Brivio Sforza a Zivido</a><br>
-                <a href="zivido/battaglialibri/esch01.php">I mercenari svizzeri in Italia. L'esperienza delle guerre milanesi (1510-1515) tratta da fonti bernesi</a><br>
-                <a href="viboldone/storia/santam.php">La lastra sepolcrale del preposto Guglielmo De Villa del 1365 nella Badia di Viboldone</a><br>
-                <a href="historia/lombardia/espi1.php">Josef Bisa, lo scultore dei Giganti</a><br>
-              <a href="historia/lombardia/espi2.php">&quot;Della Vittoria&quot;</a> il monastero nascosto di Francesco I a San Giuliano Milanese</p>
+        <td align="left" valign="top"><p>              <a href="sangiulianomil/roccabrivio/tesi00.html">&quot;Rocca Brivio: ricerca storica, rilievo, manutenzione&quot;</a><br>
+                <a href="historia/lombardia/cavazzini.html">La Madonna di Riozzo, una scultura da riscoprire</a><br>
+                <a href="attivita/confint1.html">Realt&agrave; locale e situazione internazionale alla vigilia della &quot;Battaglia dei Giganti&quot;</a><br>
+                <a href="attivita/confint3.html">L'artiglieria francese alla battaglia di Marignano</a><br>
+                <a href="attivita/confint2.html">L'investitura di Francesco I&deg; da parte del Cavaliere Bayard</a><br>
+                <a href="historia/lombardia/fantoni1.html">Tradizione e innovazione nel governo delle acque a Milano nel sec. XV</a><br>
+                <a href="historia/lombardia/cremosano.html">&quot;Il Codice araldico di Marco Cremosano&quot;</a> Trascrizione dei nomi delle famiglie nobili milanesi e italiane a cura di Sergio Leondi<br>
+                <a href="sestoulteriano/storia/villa01.html">San Matroniano nella leggenda e nella storia</a><br>
+                <a href="historia/leondibib.html">Bibliografia di storia locale del territorio milanese a cura di Sergio Leondi</a> aggiornata al 31.12.2011<br>
+                Zivido e la &quot;Battaglia dei Giganti&quot; sono stati oggetto di un &quot;reportage&quot; del settimanale svizzero Coop Coperazione (tiratura 112.642), con sede a Basilea. (<a href="salastampa/stampaindex.html">leggi</a>) (versione originale in <a href="http://www.cooperazione.ch/pdfdata/co/200425i/0425CO60_030.pdf">PDF</a>)<br>
+                <a href="zivido/castello/affreschi.html">Gli affreschi del castello Brivio Sforza a Zivido</a><br>
+                <a href="zivido/battaglialibri/esch01.html">I mercenari svizzeri in Italia. L'esperienza delle guerre milanesi (1510-1515) tratta da fonti bernesi</a><br>
+                <a href="viboldone/storia/santam.html">La lastra sepolcrale del preposto Guglielmo De Villa del 1365 nella Badia di Viboldone</a><br>
+                <a href="historia/lombardia/espi1.html">Josef Bisa, lo scultore dei Giganti</a><br>
+              <a href="historia/lombardia/espi2.html">&quot;Della Vittoria&quot;</a> il monastero nascosto di Francesco I a San Giuliano Milanese</p>
           </td>
       </tr>
     </table>
@@ -233,8 +218,8 @@ Presso la Cascina Santa Brera di San Giuliano Milanese &egrave; aperto uno Spacc
       </tr>
       <tr>
         <td align="left" valign="top"><p> <strong>dal 20 al 26 agosto: SETTIMANA VERDE PER TUTTI </strong><br>
-(anche residenziale per chi desidera) - orticoltura e preparazione conserve. Alla mattina nell'orto e al pomeriggio imparare a riconoscere le erbe spontanee, a fare le conserve (salsa al prezzemolo, salsa di pomodoro, marmellate di more, di fichi, zucchine, lamponi...) e il pane a lievitazione naturale. 
-E' possibile frequentare entrambi i corsi oppure solo mezza giornata 
+(anche residenziale per chi desidera) - orticoltura e preparazione conserve. Alla mattina nell'orto e al pomeriggio imparare a riconoscere le erbe spontanee, a fare le conserve (salsa al prezzemolo, salsa di pomodoro, marmellate di more, di fichi, zucchine, lamponi...) e il pane a lievitazione naturale.
+E' possibile frequentare entrambi i corsi oppure solo mezza giornata
 con Anna Morera Perez e Patricia Figueiredo <br>
 <a href="http://www.scuoladipratichesostenibili.it/settimanaverde.html">http://www. scuoladipratichesos tenibili. it/settimanaverde. html</a></p></td>
       </tr>
@@ -280,47 +265,47 @@ Contattare Sandra Cangemi: <a href="mailto:bambini@cascinasantabrera.it">bambini
       </tr>
       <tr>
         <td align="left" valign="top"><p><strong>ARCHIVIO DI STATO - MILANO</strong><br>
-  dal giorno 15 giugno 2004 questo Istituto ha aperto all'utenza il servizio di consultazione dell'Archivio digitale. <a href="arcstato.php">(informazioni)</a></p></td>
+  dal giorno 15 giugno 2004 questo Istituto ha aperto all'utenza il servizio di consultazione dell'Archivio digitale. <a href="arcstato.html">(informazioni)</a></p></td>
       </tr>
     </table>
     </td>
     <td width="5%" align="center" valign="top">&nbsp;</td>
     <td width="25%" align="center" valign="top">
-    <a href="/zivido/index.php"><img src="zividologo.jpg"
+    <a href="/zivido/index.html"><img src="zividologo.jpg"
             alt="zividologo.jpg (8197 byte)" border="0" width="241" height="22"></a><br>
     <br>
     <a href="viboldone/index.htm"><img src="logoabbaz.jpg" alt="logoabbaz.jpg (18594 byte)"
             border="0" width="239" height="33"></a><br>
-    <br>    <a href="/sangiulianomil/index.php"><img src="sgmcolor.jpg"
+    <br>    <a href="/sangiulianomil/index.html"><img src="sgmcolor.jpg"
             alt="sgmcolor.jpg (16563 byte)" width="241" height="57" border="0"></a><br>
     <br>
-    <a href="parco/index.php"><img src="ppparco.jpg" width="240" height="57" border="0"></a><br>
-    <br>    <a href="/borgo/indexborg.php"><img src="pplogoborg.jpg" width="241" height="36" border="0"></a><br>
+    <a href="parco/index.html"><img src="ppparco.jpg" width="240" height="57" border="0"></a><br>
+    <br>    <a href="/borgo/indexborg.html"><img src="pplogoborg.jpg" width="241" height="36" border="0"></a><br>
     <br>
-    <a href="historia/index.php"><img src="historialog.jpg" border="0" style="border: 0px solid rgb(0,0,0)" width="237" height="49"></a><br>
+    <a href="historia/index.html"><img src="historialog.jpg" border="0" style="border: 0px solid rgb(0,0,0)" width="237" height="49"></a><br>
     <br>
-    <a href="sestoulteriano/index.php"><img src="ppsestologo.jpg" width="239" height="50" border="0"></a><br>    
+    <a href="sestoulteriano/index.html"><img src="ppsestologo.jpg" width="239" height="50" border="0"></a><br>
     <br>
-    <a href="gerosa/brichetto.php"><img src="gerosapp.jpg" width="238" height="36" border="0"></a><br>
+    <a href="gerosa/brichetto.html"><img src="gerosapp.jpg" width="238" height="36" border="0"></a><br>
     <br>
     <table width="98%"  border="0" cellspacing="0" cellpadding="0">
       <tr>
         <td width="25%" align="center" valign="top" bgcolor="#FFFFFF"><a href="http://www.golgiredaelli.it/"><img src="ipab.gif" width="49" height="69" border="0"></a></td>
-        <td width="75%" align="left" valign="top" bgcolor="#FFFFFF"><p>Azienda di Servizi<br> 
-          alla Persona<br>            
+        <td width="75%" align="left" valign="top" bgcolor="#FFFFFF"><p>Azienda di Servizi<br>
+          alla Persona<br>
           <strong>Golgi - Redaelli</strong><br>
-          (ex Amm. II.PP.A.B. 
+          (ex Amm. II.PP.A.B.
            Milano)</p></td>
       </tr>
     </table>
     <table width="98%"  border="0" cellspacing="0" cellpadding="0">
       <tr>
-        <td align="left" valign="top" bgcolor="#FFFFFF"><p><a href="salastampa/naz/citt08042006_1.php">Quegli antichi oratori di campagna</a><br>
-              <a href="salastampa/naz/citt26042005.php"> Cantalupo, l&#146;ora dei restauri</a><br>
-              <a href="sangiulianomil/chiese/sanlorenzo2.php">La Pala ed i medaglioni</a><br>
-              <a href="sangiulianomil/chiese/sanlorenzo.php">L'Oratorio di San Lorenzo a Cantalupo</a><br>
-              <a href="sangiulianomil/chiese/sanlorenzo3.php">Intervento di conservazione e restauro</a><br>
-              <a href="sangiulianomil/chiese/sanlorenzo3.php">Cantalupo: al via il restauro</a></p></td>
+        <td align="left" valign="top" bgcolor="#FFFFFF"><p><a href="salastampa/naz/citt08042006_1.html">Quegli antichi oratori di campagna</a><br>
+              <a href="salastampa/naz/citt26042005.html"> Cantalupo, l&#146;ora dei restauri</a><br>
+              <a href="sangiulianomil/chiese/sanlorenzo2.html">La Pala ed i medaglioni</a><br>
+              <a href="sangiulianomil/chiese/sanlorenzo.html">L'Oratorio di San Lorenzo a Cantalupo</a><br>
+              <a href="sangiulianomil/chiese/sanlorenzo3.html">Intervento di conservazione e restauro</a><br>
+              <a href="sangiulianomil/chiese/sanlorenzo3.html">Cantalupo: al via il restauro</a></p></td>
       </tr>
     </table>
     <br><br></td>
@@ -333,7 +318,7 @@ Contattare Sandra Cangemi: <a href="mailto:bambini@cascinasantabrera.it">bambini
 </table>
 <table width="100%"  border="0" cellpadding="0" cellspacing="0" bgcolor="#005A87">
   <tr>
-    <td width="25%" align="center" valign="top"><a href="raccontami/indexracc.php"><img src="raccontami.jpg" width="136" height="48" border="0"></a></td>
+    <td width="25%" align="center" valign="top"><a href="raccontami/indexracc.html"><img src="raccontami.jpg" width="136" height="48" border="0"></a></td>
     <td width="25%" align="center" valign="top">&nbsp;</td>
     <td width="25%">&nbsp;</td>
     <td width="25%">&nbsp;</td>

@@ -1,4 +1,4 @@
-#!/usr/local/bin/php
+
 <?
 require("../include/var.inc");
 $localpath="/bussy";
@@ -29,16 +29,7 @@ require("../include/counter.inc");
   <tr>
     <td align="right" valign="top" bgcolor="#005A87"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
         <tr>
-          <td width="50%" align="center" valign="middle"><span class="Stile2">n.
-            <?
-			$conn=mysql_connect($mysql["ip"],$mysql["userid"],$mysql["pwd"]);
-			$db=mysql_select_db("aczivido",$conn);
-			$qry_counter=mysql_query("SELECT sum(count) FROM counter WHERE subweb='/bussy'",$conn);
-			$counter=mysql_fetch_array($qry_counter);
-			echo $counter[0];
-			mysql_close();
-			?>
-            visitatori dal 26.03.2007</span></td>
+          <td width="50%" align="center" valign="middle"></td>
           <td width="50%" align="right" valign="top"><img src="/jumelage.png" width="319" height="59"></td>
         </tr>
       </table></td>
@@ -54,13 +45,13 @@ require("../include/counter.inc");
   <tr>
     <td width="30%" align="left" valign="top"><table width="100%"  border="0" cellspacing="2" cellpadding="0">
         <tr>
-          <td align="left" valign="top"><a href="/gemellaggio/comitato.php"><img src="/gemellaggio/comit.png" width="278" height="20" border="0"></a></td>
+          <td align="left" valign="top"><a href="/gemellaggio/comitato.html"><img src="/gemellaggio/comit.png" width="278" height="20" border="0"></a></td>
         </tr>
         <tr>
           <td align="left" valign="top"><a href="/gemellaggio/largeimages/busfoto/album/index.html"><img src="/gemellaggio/busyfoto.png" width="278" height="20" border="0"></a></td>
         </tr>
         <tr>
-          <td align="left" valign="top"><a href="/gemellaggio/fotogem.php"><img src="/gemellaggio/gem2007.png" width="278" height="20" border="0"></a></td>
+          <td align="left" valign="top"><a href="/gemellaggio/fotogem.html"><img src="/gemellaggio/gem2007.png" width="278" height="20" border="0"></a></td>
         </tr>
         <tr>
           <td align="left" valign="top"><a href="/gemellaggio/largeimages/2008/album/index.html"><img src="/gemellaggio/alb2008.png" width="278" height="20" border="0"></a></td>
@@ -69,10 +60,10 @@ require("../include/counter.inc");
           <td align="left" valign="top"><a href="/gemellaggio/largeimages/2006/album/index.html"><img src="/gemellaggio/alb2006.png" width="278" height="20" border="0"></a></td>
         </tr>
         <tr>
-          <td align="left" valign="top"><a href="/gemellaggio/stampindx.php"><img src="/gemellaggio/stampa.png" width="278" height="20" border="0"></a></td>
+          <td align="left" valign="top"><a href="/gemellaggio/stampindx.html"><img src="/gemellaggio/stampa.png" width="278" height="20" border="0"></a></td>
         </tr>
         <tr>
-          <td align="left" valign="top"><a href="/gemellaggio/video.php"><img src="/gemellaggio/video.png" width="278" height="20" border="0"></a></td>
+          <td align="left" valign="top"><a href="/gemellaggio/video.html"><img src="/gemellaggio/video.png" width="278" height="20" border="0"></a></td>
         </tr>
         <tr>
           <td align="left" valign="top"><a href="http://italia.bussy.free.fr/"><img src="/links.png" width="278" height="20" border="0"></a></td>

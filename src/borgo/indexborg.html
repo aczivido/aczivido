@@ -1,10 +1,10 @@
-#!/usr/local/bin/php
+
 <?
 require("../include/var.inc");
 $localpath="/borgo";
 require("../include/counter.inc");
 ?><html>
-<head> 
+<head>
 <title>Borgolombardo - indice</title>
 <link href="/acz.css" rel="stylesheet" type="text/css">
 <style type="text/css">
@@ -17,21 +17,11 @@ require("../include/counter.inc");
 -->
 </style>
 </head>
-<body> 
+<body>
 <table width="100%"  border="0" cellpadding="0" cellspacing="0" bgcolor="#005A87">
   <tr>
     <td width="70%" align="left" valign="top"><img src="/log1.png" width="590" height="97"></td>
-    <td width="30%" align="center" valign="middle"><span class="Stile1">ultimo aggiornamento 21.07.2008&nbsp;<br>
-n.
-    <?
-$conn=mysql_connect($mysql["ip"],$mysql["userid"],$mysql["pwd"]);
-$db=mysql_select_db("aczivido",$conn);
-$qry_counter=mysql_query("SELECT count FROM counter WHERE subweb='/borgo'",$conn);
-$counter=mysql_fetch_array($qry_counter);
-echo $counter["count"];
-mysql_close();
-?>
-    accessi dal 28.06.2004&nbsp;</span></td>
+    <td width="30%" align="center" valign="middle"><span class="Stile1">ultimo aggiornamento 21.07.2008</span></td>
   </tr>
 </table>
 <table width="100%"  border="0" cellspacing="0" cellpadding="0">
@@ -72,7 +62,7 @@ mysql_close();
       <table width="100%"  border="0" cellspacing="0" cellpadding="0">
         <tr>
           <td width="10%">&nbsp;</td>
-          <td width="80%"><p><a href="/borgo/image/corte2004/album/index.html">2004</a> - <a href="/borgo/image/corte2005/album/index.html">2005</a> - <a href="/borgo/image/corte2006/album/index.html">2006</a> - <a href="/borgo/image/corte2007/album/index.html">2007</a> <a href="/borgo/video.php">2008</a></p></td>
+          <td width="80%"><p><a href="/borgo/image/corte2004/album/index.html">2004</a> - <a href="/borgo/image/corte2005/album/index.html">2005</a> - <a href="/borgo/image/corte2006/album/index.html">2006</a> - <a href="/borgo/image/corte2007/album/index.html">2007</a> <a href="/borgo/video.html">2008</a></p></td>
           <td width="10%">&nbsp;</td>
         </tr>
       </table>
@@ -92,7 +82,7 @@ mysql_close();
         </tr>
         <tr>
           <td><p>&nbsp;</p></td>
-          <td align="left" valign="top"><p><a href="/borgo/dama01.php">2003</a> - <a href="/borgo/dama02.php">2004</a> - <a href="/borgo/image/damvi2005/album/index.html">2005</a> - <a href="/borgo/image/damvi2006/album/index.html">2006</a> - <a href="/borgo/image/damvi2007/album/index.html">2007</a> - </p></td>
+          <td align="left" valign="top"><p><a href="/borgo/dama01.html">2003</a> - <a href="/borgo/dama02.html">2004</a> - <a href="/borgo/image/damvi2005/album/index.html">2005</a> - <a href="/borgo/image/damvi2006/album/index.html">2006</a> - <a href="/borgo/image/damvi2007/album/index.html">2007</a> - </p></td>
           <td><p>&nbsp;</p></td>
         </tr>
         <tr>
@@ -107,7 +97,7 @@ mysql_close();
         </tr>
         <tr>
           <td><p>&nbsp;</p></td>
-          <td align="left" valign="top"><p><a href="/borgo/video.php">Guarda</a></p></td>
+          <td align="left" valign="top"><p><a href="/borgo/video.html">Guarda</a></p></td>
           <td><p>&nbsp;</p></td>
         </tr>
         <tr>
@@ -122,7 +112,7 @@ mysql_close();
         </tr>
         <tr>
           <td><p>&nbsp;</p></td>
-          <td align="left" valign="top"><p><a href="/borgo/echi.php">Sfoglia</a></p></td>
+          <td align="left" valign="top"><p><a href="/borgo/echi.html">Sfoglia</a></p></td>
           <td><p>&nbsp;</p></td>
         </tr>
       </table>
