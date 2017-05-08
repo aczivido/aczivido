@@ -5,6 +5,7 @@ import express from 'express'
 import gulp from 'gulp'
 import sequence from 'gulp-sequence'
 import imagemin from 'gulp-imagemin'
+import htmlmin from 'gulp-htmlmin'
 import gulpLoadPlugins from 'gulp-load-plugins'
 
 
@@ -17,18 +18,31 @@ const server = express()
 // Helpers
 // ----------------------------------------------------------------------------
 
-gulp.task('build:images', (done) => {
+gulp.task('minimise:images', (done) => {
   return gulp.src('src/**/*.*')
     .pipe(imagemin())
-    .on('error', (error) => {
-      done(error)
-    })
+    .on('error', (error) => done(error))
     .pipe(gulp.dest('dist'))
     .pipe(plugins.size())
 })
 
 
-gulp.task('build:static', () => {
+gulp.task('minimise:html', (done) => {
+  return gulp.src('src/**/*.html')
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      collapseBooleanAttributes: true,
+      decodeEntities: true,
+      minifyCSS: true,
+      minifyJS: true
+    }))
+    .on('error', (error) => done(error))
+    .pipe(gulp.dest('dist'))
+    .pipe(plugins.size())
+})
+
+
+gulp.task('build:all', () => {
   return gulp.src('src/**/*.*')
     .pipe(gulp.dest('dist'))
     .pipe(plugins.size())
@@ -67,4 +81,4 @@ gulp.task('serve:prod', ['build'], () => {
 
 
 // Build
-gulp.task('build', sequence('clean', 'build:static', 'build:images'))
+gulp.task('build', sequence('clean', 'build:all', ['minimise:images', 'minimise:html']))
