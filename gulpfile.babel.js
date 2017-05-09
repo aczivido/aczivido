@@ -6,6 +6,7 @@ import gulp from 'gulp'
 import sequence from 'gulp-sequence'
 import imagemin from 'gulp-imagemin'
 import htmlmin from 'gulp-htmlmin'
+import rsync from 'gulp-rsync'
 import gulpLoadPlugins from 'gulp-load-plugins'
 
 
@@ -82,3 +83,20 @@ gulp.task('serve:prod', ['build'], () => {
 
 // Build
 gulp.task('build', sequence('clean', 'build:all', ['minimise:images', 'minimise:html']))
+
+
+// Build
+gulp.task('deploy', () => {
+  const defaultOptions = {
+    compress: true,
+    root: 'dist/',
+    clean: true,
+    recursive: true
+  }
+  const userOptions = require('./deploy.json')
+  const options = Object.assign({}, defaultOptions, userOptions)
+
+  return gulp.src('dist/**')
+    .pipe(rsync(options))
+    .pipe(plugins.size())
+})
