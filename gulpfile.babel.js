@@ -96,7 +96,7 @@ gulp.task('deploy', () => {
   const userOptions = require('./deploy.json')
   const options = Object.assign({}, defaultOptions, userOptions)
 
-  return gulp.src('dist/**')
+  return gulp.src('dist/')
     .pipe(rsync(options))
     .pipe(plugins.size())
 })
