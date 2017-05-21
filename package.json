@@ -4,13 +4,6 @@
   "repository": "git@github.com:expobrain/aczivido-site.git",
   "author": "Daniele Esposti <daniele.esposti@gmail.com>",
   "license": "MIT",
-  "scripts": {
-    "serve": "",
-    "build:media": "imagemin ./src/**/*.* --out-dir=./dist/",
-    "build:static": "cp -r src/* dist/",
-    "build": "mkdir -p ./dist && rm -rf ./dist/* && yarn run build:static && yarn run build:media",
-    "upload": "rsync -avSz --delete-after dist/"
-  },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
