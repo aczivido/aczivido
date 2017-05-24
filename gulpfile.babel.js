@@ -91,7 +91,8 @@ gulp.task('deploy', () => {
     compress: true,
     root: 'dist/',
     clean: true,
-    recursive: true
+    recursive: true,
+    chmod: "Du=rwx,Dgo=rx,Fu=rw,Fog=r"
   }
   const userOptions = require('./deploy.json')
   const options = Object.assign({}, defaultOptions, userOptions)
