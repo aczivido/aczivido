@@ -8,7 +8,7 @@
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
     "babel-preset-env": "^1.5.1",
-    "eslint": "^3.19.0",
+    "eslint": "^4.18.2",
     "express": "^4.15.3",
     "gulp": "^3.9.1",
     "gulp-htmlmin": "^3.0.0",
