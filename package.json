@@ -10,12 +10,15 @@
     "babel-preset-env": "^1.5.1",
     "eslint": "^4.18.2",
     "express": "^4.15.3",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-htmlmin": "^3.0.0",
     "gulp-imagemin": "^3.2.0",
     "gulp-load-plugins": "^1.5.0",
     "gulp-rsync": "^0.0.8",
     "gulp-sequence": "^0.4.6",
     "gulp-size": "^2.1.0"
+  },
+  "scripts": {
+    "build": "gulp build"
   }
 }

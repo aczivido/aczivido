@@ -50,11 +50,6 @@ gulp.task('build:all', () => {
 })
 
 
-gulp.task('default', () => {
-  gulp.start('build')
-})
-
-
 gulp.task('clean', () => {
   return del(['./dist/*'])
 })
@@ -73,7 +68,11 @@ gulp.task('serve', () => {
 })
 
 
-gulp.task('serve:prod', ['build'], () => {
+// Build
+gulp.task('build', gulp.series('clean', 'build:all', gulp.parallel('minimise:images', 'minimise:html')))
+
+
+gulp.task('serve:prod', gulp.series('build'), () => {
   server.use(express.static('./dist'))
   server.listen(serverPort)
 
@@ -81,11 +80,7 @@ gulp.task('serve:prod', ['build'], () => {
 })
 
 
-// Build
-gulp.task('build', sequence('clean', 'build:all', ['minimise:images', 'minimise:html']))
-
-
-// Build
+// Deploy
 gulp.task('deploy', () => {
   const defaultOptions = {
     compress: true,
