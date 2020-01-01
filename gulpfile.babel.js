@@ -3,7 +3,6 @@ import del from 'del'
 import express from 'express'
 
 import gulp from 'gulp'
-import sequence from 'gulp-sequence'
 import imagemin from 'gulp-imagemin'
 import htmlmin from 'gulp-htmlmin'
 import rsync from 'gulp-rsync'
