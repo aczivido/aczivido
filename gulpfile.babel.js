@@ -5,7 +5,6 @@ import express from 'express'
 import gulp from 'gulp'
 import imagemin from 'gulp-imagemin'
 import htmlmin from 'gulp-htmlmin'
-import rsync from 'gulp-rsync'
 import gulpLoadPlugins from 'gulp-load-plugins'
 
 
@@ -76,22 +75,4 @@ gulp.task('serve:prod', gulp.series('build'), () => {
   server.listen(serverPort)
 
   console.log(`Serving on localhost:${serverPort}`)  // eslint-disable-line no-console
-})
-
-
-// Deploy
-gulp.task('deploy', () => {
-  const defaultOptions = {
-    compress: true,
-    root: 'dist/',
-    clean: true,
-    recursive: true,
-    chmod: "Du=rwx,Dgo=rx,Fu=rw,Fog=r"
-  }
-  const userOptions = require('./deploy.json')
-  const options = Object.assign({}, defaultOptions, userOptions)
-
-  return gulp.src('dist/')
-    .pipe(rsync(options))
-    .pipe(plugins.size())
 })
