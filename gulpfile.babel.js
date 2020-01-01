@@ -62,7 +62,7 @@ gulp.task('serve', () => {
   server.use(express.static('./src'))
   server.listen(serverPort)
 
-  console.log(`Serving on localhost:${serverPort}`)  // eslint-disable-line no-console
+  console.log(`Serving on http://localhost:${serverPort}`)  // eslint-disable-line no-console
 })
 
 
@@ -74,5 +74,5 @@ gulp.task('serve:prod', gulp.series('build'), () => {
   server.use(express.static('./dist'))
   server.listen(serverPort)
 
-  console.log(`Serving on localhost:${serverPort}`)  // eslint-disable-line no-console
+  console.log(`Serving on http://localhost:${serverPort}`)  // eslint-disable-line no-console
 })
