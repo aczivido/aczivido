@@ -4,6 +4,9 @@
   "repository": "git@github.com:expobrain/aczivido-site.git",
   "author": "Daniele Esposti <daniele.esposti@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": "^16"
+  },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-eslint": "^10.1.0",
