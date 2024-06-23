@@ -16,7 +16,7 @@
     "express": "^4.19.2",
     "gulp": "^4.0.2",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^9.0.0",
+    "gulp-imagemin": "^9.1.0",
     "gulp-load-plugins": "^2.0.8",
     "gulp-size": "^5.0.0"
   }
