@@ -11,7 +11,7 @@
     "babel-cli": "^6.24.1",
     "babel-eslint": "^10.1.0",
     "babel-preset-env": "^1.7.0",
-    "del": "^6.1.1",
+    "del": "^8.0.0",
     "eslint": "^9.11.1",
     "express": "^4.19.2",
     "gulp": "^5.0.0",
